@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body>
+    <h1>Sudoku Solver</h1>
+    <div class="sudoku-container">
+        <!-- Create 81 input cells for the Sudoku grid -->
+        {% for i in range(9) %}
+            {% for j in range(9) %}
+                <input class="cell" type="text" maxlength="1" id="cell-{{ i }}-{{ j }}">
+            {% endfor %}
+        {% endfor %}
+    </div>
+    <div class="btn-container">
+        <button class="btn-solve" onclick="solveSudoku()">Solve</button>
+        <button class="btn-clear" onclick="clearGrid()">Clear</button>
+    </div>
+
+    <script src="../static/js/script.js"></script>
+</body>
+</html>

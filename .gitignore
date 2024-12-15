@@ -1,0 +1,20 @@
+# Python
+*.py[cod]
+*.pyc
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Conda
+.env
+*.env
+*.dll
+*.conda
+*.ipynb_checkpoints
+*.DS_Store
+
+sudokusolver/
